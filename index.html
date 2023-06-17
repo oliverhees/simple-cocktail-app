@@ -8,6 +8,15 @@
     <script src="index.js" type="module"></script>
   </head>
   <body>
+    <h1>Barkepper make me a Coktail!</h1>
+    <p>Input the Cocktail name and get a variation of drinks with recipe.</p>
+    <form class="form">
+      <input type="text" name="search" id="search" required />
+      <select name="searchby" id="searchby">
+        <option value="name">Cocktail Name</option>
+        <option value="incrident">Ingridient</option>
+      </select>
+    </form>
     <div id="app">
       <div class="wrapper">
         <div class="card cocktail">
