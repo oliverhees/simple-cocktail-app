@@ -24,3 +24,66 @@ body {
   color: #9e9e9e;
   margin-top: 30px;
 }
+
+/* global css */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+header p {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+main {
+  display: grid;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 20px 0 20px 0;
+}
+
+footer p {
+  color: #fff;
+}
+
+/* form */
+form {
+  display: grid;
+  grid-template-areas: "a b" "c c";
+  justify-content: center;
+  width: 100%;
+}
+
+form input {
+  width: 300px;
+  padding: 5px;
+  grid-area: a;
+  border-radius: var(--border-radius);
+  margin-right: 12px;
+}
+
+form select {
+  grid-area: b;
+  border-radius: var(--border-radius);
+}
+
+form button {
+  margin-top: 20px;
+  grid-area: c;
+  line-height: 1.5rem;
+  font-weight: 600;
+  border-radius: var(--border-radius);
+}
