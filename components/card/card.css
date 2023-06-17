@@ -1,0 +1,61 @@
+.card {
+  width: 250px;
+  position: relative;
+  display: inline-block;
+  background-color: var(--card-background-color);
+  border-radius: var(--border-radius);
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+}
+
+.card__image {
+  height: 250px;
+}
+
+.card__category {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 3px;
+  color: var(--second-color);
+}
+
+.card__cocktail-name {
+  font-size: 26px;
+  color: var(--primary-color);
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.card__cocktail-description {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.card__cocktail-infos {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--second-color);
+  color: white;
+  font-weight: 700;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.one-third {
+  border-right: 1px solid #bd7c2f;
+  width: 33.33%;
+  padding: 5px 0 5px 0;
+}
+
+.no-border {
+  border: none;
+}
+
+.subheading {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 11px;
+}

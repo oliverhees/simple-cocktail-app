@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+@import "./components/card/card.css";
 
 * {
   box-sizing: border-box;
@@ -6,7 +7,9 @@
 
 :root {
   --border-radius: 14px;
-  --cocktail: #ec9b3b;
+  --primary-color: #000;
+  --second-color: #ec9b3b;
+  --card-background-color: #fff;
 }
 
 body {
@@ -86,4 +89,12 @@ form button {
   line-height: 1.5rem;
   font-weight: 600;
   border-radius: var(--border-radius);
+}
+
+#app {
+  width: 100%;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  justify-content: center;
 }
