@@ -1,4 +1,5 @@
 import { createCard } from "../card/card.js";
+import { ingCounter } from "../ingCount/ingredientCounter.js";
 
 const msg = document.querySelector(".msg");
 
@@ -19,9 +20,6 @@ export async function getCocktails(search) {
       //log for debug
       console.log(data);
 
-      //set alc default NO
-      let alc = "NO";
-
       //check data have drinks
       if (data.drinks === null) {
         //display message
@@ -32,20 +30,24 @@ export async function getCocktails(search) {
 
         //get drinks
         data.drinks.forEach((cocktail) => {
+          //set alc default NO
+          let alc = "NO";
           //check drink have alcohol
-          if (cocktail.strAlcoholic === "Alcohol") {
-            let alc = "YES";
-          } else {
-            let alc = "NO";
+          if (cocktail.strAlcoholic === "Alcoholic") {
+            alc = "YES";
+          }
+          //check if recipe video
+          let video = "No";
+          if (cocktail.strVideo != null) {
+            video = "Yes";
           }
           //create cocktail card
           createCard(
             cocktail.strCategory,
             cocktail.strDrink,
-            null,
-            null,
+            ingCounter(cocktail),
             alc,
-            null,
+            video,
             cocktail.strDrinkThumb
           );
         });

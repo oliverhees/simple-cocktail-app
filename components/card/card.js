@@ -1,14 +1,6 @@
 const app = document.getElementById("app");
 
-export function createCard(
-  category,
-  name,
-  description,
-  ingredients,
-  alcohol,
-  video,
-  image
-) {
+export function createCard(category, name, ingredients, alcohol, video, image) {
   const wrapper = document.createElement("div");
   wrapper.classList.add("wrapper");
 
