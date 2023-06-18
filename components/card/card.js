@@ -25,6 +25,12 @@ export function createCard(category, name, ingredients, alcohol, video, image) {
               </div>
             </div>
           </div>
+          <div class="card recipe">
+          <div class="card__image" style="background-image: url('${image}')"></div>
+          <p class="ingredients">
+          testekjljtjwlketjwo
+          </p>
+          </div>
     `;
   app.append(wrapper);
 }

@@ -2,9 +2,7 @@
   width: 250px;
   position: relative;
   display: inline-block;
-  background-color: var(--card-background-color);
   border-radius: var(--border-radius);
-  text-align: center;
   box-shadow: -1px 15px 30px -12px black;
 }
 
@@ -82,4 +80,9 @@
 
 .display-recipe:hover {
   background-color: #a86717;
+}
+
+.cocktail {
+  background-color: var(--card-background-color);
+  text-align: center;
 }
