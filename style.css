@@ -64,6 +64,7 @@ footer p {
 
 /* form */
 form {
+  position: relative;
   display: grid;
   grid-template-areas: "a b" "c c";
   justify-content: center;
@@ -101,5 +102,35 @@ form button {
 }
 
 .msg {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 30%;
+  display: none;
+  justify-content: center;
   background-color: var(--card-background-color);
+  border-radius: var(--border-radius);
+  margin-top: 2rem;
+  padding: 1rem;
+  color: #000;
+}
+
+.msg img {
+  width: 20%;
+  display: inline-flex;
+}
+
+.msg__container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+.msg__container h2 {
+  line-height: 1rem;
+  margin: 2rem 0 0 0;
+}
+
+.show {
+  display: flex;
 }

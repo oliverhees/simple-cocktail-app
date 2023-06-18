@@ -20,10 +20,6 @@
           arial-label="Give in a Cocktail name"
           required
         />
-        <section class="msg">
-          <h2>Sorry!</h2>
-          <p>We have no drinks found.</p>
-        </section>
         <select name="searchby" id="searchby">
           <option value="name">Cocktail Name</option>
           <option value="incrident">Ingridient</option>
@@ -32,6 +28,13 @@
       </form>
     </header>
     <main>
+      <section class="msg">
+        <img src="./assets/img/990.jpg" alt="No Drink Found" />
+        <div class="msg__container">
+          <h2>Sorry!</h2>
+          <p>We have no drinks found.</p>
+        </div>
+      </section>
       <div id="app"></div>
     </main>
     <footer>
