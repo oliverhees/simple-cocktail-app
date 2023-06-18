@@ -9,7 +9,12 @@
 }
 
 .card__image {
+  display: block;
   height: 250px;
+  background-size: cover;
+  margin-bottom: 20px;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
 }
 
 .card__category {
@@ -25,6 +30,9 @@
   color: var(--primary-color);
   font-weight: 900;
   margin-bottom: 5px;
+  line-height: 1.6rem;
+  padding: 0 1rem 0 1rem;
+  min-height: 80px;
 }
 
 .card__cocktail-description {
@@ -58,4 +66,20 @@
   text-transform: uppercase;
   font-weight: 400;
   font-size: 11px;
+}
+
+.display-recipe {
+  padding: 0.7rem 2rem;
+  border-radius: 50px;
+  margin-bottom: 2rem;
+  background-color: var(--second-color);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  box-shadow: 2px 2px 6px #ccc;
+}
+
+.display-recipe:hover {
+  background-color: #a86717;
 }

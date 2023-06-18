@@ -97,4 +97,9 @@ form button {
   display: grid;
   grid-template-columns: repeat(auto-fill, 200px);
   justify-content: center;
+  gap: 100px;
+}
+
+.msg {
+  background-color: var(--card-background-color);
 }

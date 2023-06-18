@@ -11,46 +11,28 @@
     <header>
       <h1>Barkepper, make me a Cocktail!</h1>
       <p>Input the Cocktail name and get a variation of drinks with recipe.</p>
-      <form class="form">
+      <form class="form" data-js="form">
         <input
           type="text"
           name="search"
           id="search"
+          data-js="input"
           arial-label="Give in a Cocktail name"
           required
         />
+        <section class="msg">
+          <h2>Sorry!</h2>
+          <p>We have no drinks found.</p>
+        </section>
         <select name="searchby" id="searchby">
           <option value="name">Cocktail Name</option>
           <option value="incrident">Ingridient</option>
         </select>
-        <button type="submit">Search Cocktail</button>
+        <button type="submit" data-js="button">Search Cocktail</button>
       </form>
     </header>
     <main>
-      <div id="app">
-        <div class="wrapper">
-          <div class="card cocktail">
-            <div class="card__image"></div>
-            <div class="card__category">Ordinary Drink</div>
-            <div class="card__cocktail-name">Margarita</div>
-            <div class="card__cocktail-description"></div>
-            <div class="card__cocktail-infos clearfix">
-              <div class="one-third">
-                <div class="sub-text">7</div>
-                <div class="subheading">Ingredients</div>
-              </div>
-              <div class="one-third">
-                <div class="sub-text">Yes</div>
-                <div class="subheading">Alcohol</div>
-              </div>
-              <div class="one-third no-border">
-                <div class="sub-text">No</div>
-                <div class="subheading">Video</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div id="app"></div>
     </main>
     <footer>
       <p class="copyright">Created with Love by Oliver Hees 2023</p>
